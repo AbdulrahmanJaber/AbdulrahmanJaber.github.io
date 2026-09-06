@@ -1,0 +1,14 @@
+node_modules/
+.pnpm-store/
+dist/
+.astro/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+*.zip
+*.csv
+*.xlsx
+*.ipynb_checkpoints/
+kaggle.json

@@ -1,0 +1,18 @@
+---
+import { site } from "../data/site";
+---
+
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="wordmark" href="/" aria-label={`${site.name}, home`}>
+      <span class="wordmark-mark">AJ</span>
+      <span class="wordmark-name">{site.name}</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="/#work">Work</a>
+      <a href="/#experience">Experience</a>
+      <a href="/about">About</a>
+      <a class="nav-contact" href={`mailto:${site.email}`}>Contact ↗</a>
+    </nav>
+  </div>
+</header>
