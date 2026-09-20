@@ -209,7 +209,7 @@ blockquote {
 .hero-facts {
   grid-column: 2;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 0;
   margin-top: 5rem;
   border-top: 1px solid var(--line);
@@ -223,6 +223,10 @@ blockquote {
 
 .hero-facts div + div {
   padding-left: 1rem;
+}
+
+.hero-facts div:last-child {
+  border-right: 0;
 }
 
 .hero-facts dt,
