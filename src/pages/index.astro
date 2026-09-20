@@ -35,7 +35,7 @@ const projects = (await getCollection("projects"))
   <section class="section shell" id="work">
     <div class="section-heading">
       <p class="eyebrow">Selected work</p>
-      <p class="section-note">Four projects spanning research, security, vision, and predictive modeling.</p>
+      <p class="section-note">Three projects spanning privacy research, security, and predictive modeling.</p>
     </div>
     <div class="project-list">
       {projects.map((project, index) => <ProjectCard project={project} index={index + 1} />)}
@@ -44,12 +44,12 @@ const projects = (await getCollection("projects"))
 
   <section class="statement-section">
     <div class="shell statement-grid">
-      <p class="eyebrow">Current research</p>
+      <p class="eyebrow">Published master’s thesis</p>
       <blockquote>
         How can a model protect individual data without quietly making its worst-served group worse?
       </blockquote>
       <p class="statement-copy">
-        My master’s work studies adaptive optimization under differential privacy, with fairness signals designed around minority-group learning dynamics.
+        My master’s thesis, published in the American University of Beirut library, studied adaptive optimization under differential privacy, with fairness signals designed around minority-group learning dynamics.
       </p>
     </div>
   </section>

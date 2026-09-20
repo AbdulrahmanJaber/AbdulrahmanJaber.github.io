@@ -1,10 +1,10 @@
 ---
 title: "Fairness-Aware Optimization Under Differential Privacy"
 shortTitle: "Fairness under differential privacy"
-kicker: "Master’s thesis"
+kicker: "Published master’s thesis"
 summary: "A privacy-accounted controller that adapts learning-rate behavior when an underrepresented group falls behind."
 year: 2026
-status: "Completed thesis"
+status: "Published in AUB library"
 role: "Researcher and ML engineer"
 team: "Individual research with academic supervision"
 featured: true
