@@ -21,7 +21,9 @@ metrics:
 image: "/images/projects/thesis/adult-skewed-method-metrics.png"
 imageAlt: "Six charts comparing overall and balanced accuracy, female and male accuracy, demographic parity ratio, and group-accuracy gap across four methods on skewed Adult"
 imageCaption: "Skewed Adult outcomes across four training methods."
-links: []
+links:
+  - label: "Read the thesis"
+    href: "https://hdl.handle.net/10938/35513"
 ---
 
 ## Research question
