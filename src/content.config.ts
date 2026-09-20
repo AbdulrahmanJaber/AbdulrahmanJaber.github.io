@@ -16,9 +16,10 @@ const projects = defineCollection({
     featured: z.boolean().default(true),
     order: z.number(),
     tags: z.array(z.string()),
-    metrics: z.array(z.object({ label: z.string(), value: z.string() })),
+    metrics: z.array(z.object({ label: z.string(), value: z.string(), comparison: z.string().optional() })),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
+    imageCaption: z.string().optional(),
     links: z.array(z.object({ label: z.string(), href: z.url() })).default([]),
   }),
 });

@@ -11,14 +11,16 @@ featured: true
 order: 1
 tags: ["Differential privacy", "Optimization", "Fairness"]
 metrics:
-  - label: "Digit-8 accuracy"
-    value: "48.12 → 65.30%"
+  - label: "Minority-class accuracy"
+    value: "65.30%"
+    comparison: "+17.18 pp vs DP FixedLR"
   - label: "Final group gap"
     value: "29.25 pp"
   - label: "Compared at"
     value: "ε = 2"
-image: "/images/projects/thesis/utility-fairness.png"
-imageAlt: "Utility and fairness trade-off across differentially private training methods on the Adult dataset"
+image: "/images/projects/thesis/adult-skewed-method-metrics.png"
+imageAlt: "Six charts comparing overall and balanced accuracy, female and male accuracy, demographic parity ratio, and group-accuracy gap across four methods on skewed Adult"
+imageCaption: "Skewed Adult outcomes across four training methods."
 links: []
 ---
 
@@ -42,7 +44,7 @@ The first controller used raw group losses and was useful as a mechanism prototy
 
 ## Results
 
-ADADP raised the underrepresented digit-8 accuracy from 48.12% to 61.19% and reduced its group gap from 45.71 to 33.03 percentage points. The privacy-accounted controller produced a further gain to 65.30% digit-8 accuracy and a 29.25-point final group gap at the same total ε = 2.
+On skewed MNIST, the underrepresented digit-8 accuracy was 48.12% with DP FixedLR, 60.40% with vanilla ADADP, and 65.30% with the final privacy-accounted fairness-aware controller. The group gap fell from 45.71 to 33.03 to 29.25 percentage points, respectively, at the same total ε = 2.
 
 On Adult, the controller improved predictive utility but did not improve demographic parity ratio. That distinction matters: better group accuracy is not the same thing as equal positive prediction rates.
 

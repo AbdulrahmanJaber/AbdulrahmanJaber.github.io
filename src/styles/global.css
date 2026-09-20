@@ -605,6 +605,13 @@ blockquote {
   letter-spacing: 0.07em;
 }
 
+.metric-comparison {
+  margin-top: 0.45rem;
+  font-size: 0.98rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
 .case-figure {
   margin-top: 5rem;
 }
@@ -618,10 +625,24 @@ blockquote {
 }
 
 .case-figure figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
   margin-top: 0.75rem;
   color: var(--muted);
   font-family: var(--mono);
   font-size: 0.72rem;
+}
+
+.case-figure figcaption a {
+  color: var(--paper);
+  border-bottom: 1px solid currentColor;
+}
+
+.case-figure figcaption a:hover,
+.case-figure figcaption a:focus-visible {
+  color: var(--signal);
 }
 
 .case-body {

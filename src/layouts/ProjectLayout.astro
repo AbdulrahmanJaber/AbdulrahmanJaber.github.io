@@ -29,14 +29,23 @@ const { data } = project;
 
     <section class="metric-band">
       <div class="shell metric-grid">
-        {data.metrics.map((metric) => <div><p>{metric.value}</p><span>{metric.label}</span></div>)}
+        {data.metrics.map((metric) => (
+          <div>
+            <p>{metric.value}</p>
+            <span>{metric.label}</span>
+            {metric.comparison && <strong class="metric-comparison">{metric.comparison}</strong>}
+          </div>
+        ))}
       </div>
     </section>
 
     {data.image && (
       <figure class="case-figure shell">
         <img src={data.image} alt={data.imageAlt ?? ""} loading="eager" />
-        <figcaption>Evidence from the project evaluation.</figcaption>
+        <figcaption>
+          <span>{data.imageCaption ?? "Evidence from the project evaluation."}</span>
+          <a href={data.image} target="_blank" rel="noopener noreferrer">View full-size figure ↗</a>
+        </figcaption>
       </figure>
     )}
 
