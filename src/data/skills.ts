@@ -1,14 +1,27 @@
 export const skillGroups = [
   {
-    label: "Machine learning",
-    items: ["PyTorch", "scikit-learn", "NumPy", "Deep learning", "Model evaluation"],
+    label: "Programming",
+    items: ["Python", "C"],
   },
   {
-    label: "Research",
-    items: ["Differential privacy", "DP-SGD", "Fairness-aware ML", "Hyperparameter optimization"],
+    label: "Machine Learning",
+    items: [
+      "PyTorch",
+      "NumPy",
+      "Pandas",
+      "scikit-learn",
+      "Differential Privacy",
+      "DP-SGD",
+      "Fairness-Aware ML",
+      "Hyperparameter Optimization",
+    ],
   },
   {
     label: "Engineering",
-    items: ["Python", "C", "Git", "ADS", "CST", "Atoll"],
+    items: ["ADS", "CST", "Atoll"],
+  },
+  {
+    label: "Familiar with",
+    items: ["Git", "SQL", "Linux", "Bash"],
   },
 ];
