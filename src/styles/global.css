@@ -141,7 +141,6 @@ blockquote {
   grid-template-columns: 0.7fr 3.3fr;
   grid-template-rows: 1fr auto;
   column-gap: 3rem;
-  border-bottom: 1px solid var(--line);
 }
 
 .hero-label {
@@ -213,10 +212,11 @@ blockquote {
   gap: 0;
   margin-top: 5rem;
   border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .hero-facts div {
-  min-height: 98px;
+  min-height: 88px;
   padding: 1.1rem 1rem 1rem 0;
   border-right: 1px solid var(--line);
 }
