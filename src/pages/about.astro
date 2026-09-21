@@ -1,27 +1,35 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { education, experience } from "../data/experience";
 import { site } from "../data/site";
 ---
 
 <BaseLayout title="About" description={`About ${site.name}, machine learning engineer and researcher.`}>
   <section class="page-intro shell">
     <p class="eyebrow">About</p>
-    <h1>I work where model performance meets real-world constraints.</h1>
+    <h1>From communication systems to machine learning.</h1>
     <div class="intro-columns">
-      <p class="lede">My background moves between electrical engineering, communications, and machine learning research.</p>
+      <p class="lede">Telecommunications taught me to look at the whole system: the signal, the network, and what can fail between them.</p>
       <div class="prose">
-        <p>I completed my bachelor’s degree at Beirut Arab University and my master’s degree at the American University of Beirut.</p>
-        <p>My master’s research focused on differential privacy, fairness-aware training, and adaptive optimization. Earlier work includes UAV security and football outcome forecasting.</p>
-        <p>I care about experiments that are reproducible, claims that match the evidence, and systems that acknowledge their limits.</p>
+        <p>I studied communication and electrical engineering at Beirut Arab University, then saw those ideas in practice during a telecommunications internship at OGERO. Working around access networks, fiber, and mobile systems made reliability and physical constraints concrete.</p>
+        <p>My UAV GPS spoofing project brought me into machine learning through a familiar problem: deciding whether a signal can be trusted. A football forecasting project taught me a different lesson about time-aware data, leakage, and the uncertainty that remains even after careful modeling.</p>
+        <p>At the American University of Beirut, I moved deeper into how models learn. My master’s thesis studied adaptive optimization under differential privacy and how training decisions affect underrepresented groups.</p>
       </div>
     </div>
   </section>
   <section class="section shell">
-    <div class="section-heading"><p class="eyebrow">Path</p><p class="section-note">Research, teaching, and engineering practice.</p></div>
-    <div class="timeline">
-      {experience.map((item) => <article class="timeline-row"><p class="timeline-period mono">{item.period}</p><div><h3>{item.role}</h3><p>{item.organization}</p></div><p>{item.detail}</p></article>)}
-      {education.map((item) => <article class="timeline-row"><p class="timeline-period mono">{item.year}</p><div><h3>{item.degree}</h3><p>{item.school}</p></div><p>Academic foundation in electrical, computer, and communication engineering.</p></article>)}
+    <div class="section-heading">
+      <p class="eyebrow">What comes next</p>
+      <p class="section-note">The questions connecting my engineering and research work.</p>
+    </div>
+    <div class="intro-columns about-direction">
+      <div class="prose">
+        <h2>Problems that interest me</h2>
+        <p>I’m drawn to systems that must make useful decisions from noisy or sensitive data, especially when accuracy alone hides security risks, privacy costs, or uneven outcomes across groups.</p>
+      </div>
+      <div class="prose">
+        <h2>Where I’m headed</h2>
+        <p>I want to bring this systems perspective to applied machine learning: build models that respect privacy and resource limits, test them beyond a single headline metric, and make their failure modes understandable.</p>
+      </div>
     </div>
   </section>
 </BaseLayout>

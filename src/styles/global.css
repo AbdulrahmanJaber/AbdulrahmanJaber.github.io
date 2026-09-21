@@ -527,6 +527,15 @@ blockquote {
   margin-top: 1.2rem;
 }
 
+.about-direction h2 {
+  margin-bottom: 1rem;
+  color: var(--paper);
+  font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  font-weight: 550;
+}
+
 .case-header {
   display: grid;
   grid-template-columns: 1fr 4fr;
