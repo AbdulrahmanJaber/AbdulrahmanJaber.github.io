@@ -4,7 +4,7 @@ shortTitle: "Fairness under differential privacy"
 kicker: "Published master’s thesis"
 summary: "A privacy-accounted controller that adapts learning-rate behavior when an underrepresented group falls behind."
 year: 2026
-status: "Published in AUB library"
+status: "Available in AUB Library"
 role: "Researcher and ML engineer"
 team: "Individual research with academic supervision"
 featured: true
