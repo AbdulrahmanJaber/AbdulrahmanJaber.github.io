@@ -2,7 +2,7 @@ export const site = {
   name: "Abdulrahman Jaber",
   title: "Machine Learning Engineer",
   description:
-    "Electrical and computer engineer working across privacy-preserving machine learning, optimization, computer vision, and reliable AI systems.",
+    "Electrical and computer engineer working across privacy-preserving machine learning, optimization, and reliable AI systems.",
   email: "jaber_abdulrahman@outlook.com",
   location: "Tripoli, Lebanon",
   linkedin: "https://www.linkedin.com/in/abdulrahman-jaber-6971ba207",
